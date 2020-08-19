@@ -1,0 +1,6 @@
+<span *ngIf='inValidLogin'>{{errorMessage}}</span>
+<div>
+<span>Username: <input type="text" name="username" [(ngModel)]="username"></span>
+<span>Password:  <input type="password" name="password" [(ngModel)]="password"></span>
+<button (click)=onSubmit()>Submit</button>
+</div>
