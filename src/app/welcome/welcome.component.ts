@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class WelcomeComponent implements OnInit {
 
   message = 'Welcome to our awessome App';
-  name = '';
+  name = 'Prabhakar';
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {

@@ -18,11 +18,13 @@ export class LoginComponent implements OnInit {
   }
   onSubmit(){
     this.onValidation();
+    if(this.inValidLogin){
     this.router.navigate(['welcome', this.username]);
+    }
     console.log(this.username);
   }
   onValidation(){
-    if(this.username==='login' && this.password === 'dummy'){
+    if(this.username==='Prabhakar' && this.password === 'dummy'){
       this.inValidLogin = true;
     } else {
       this.inValidLogin = false;

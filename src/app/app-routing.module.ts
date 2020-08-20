@@ -6,7 +6,7 @@ import { ErrorComponent } from './error/error.component';
 import { ListTodosComponent } from './list-todos/list-todos.component';
 
 const routes: Routes = [
-  {path:'', component: WelcomeComponent},
+  {path:'', component: LoginComponent},
   {path:'welcome/:name', component: WelcomeComponent},
   {path:'login', component: LoginComponent},
   {path:'todos', component: ListTodosComponent},
