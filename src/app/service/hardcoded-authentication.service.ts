@@ -23,4 +23,7 @@ export class HardcodedAuthenticationService {
     // console.log("Called session storage"+ user);
     return !(user === null);
   }
+  logOut(){
+    sessionStorage.removeItem('authenticationUser');
+  }
 }
